@@ -60,8 +60,8 @@ return [
     */
 
     'middleware' => [
-        'verify_csrf_token' => \App\Domain\Pim\Http\Middleware\VerifyCsrfToken::class,
-        'encrypt_cookies' => \App\Domain\Pim\Http\Middleware\EncryptCookies::class,
+        'verify_csrf_token' => \App\Pim\Application\Middleware\VerifyCsrfToken::class,
+        'encrypt_cookies' => \App\Pim\Application\Middleware\EncryptCookies::class,
     ],
 
 ];
